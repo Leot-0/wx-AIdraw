@@ -1,0 +1,26 @@
+<!-- apps.wxml -->
+<view class="container">
+
+<!-- 应用列表 -->
+<scroll-view class="app-list" scroll-y="true">
+  <block wx:for="{{apps}}" wx:key="id">
+    <!-- 点击整个应用项查看大图 -->
+    <view class="app-item" bindtap="previewImage" data-src="{{item.image}}">
+      <!-- 应用图片 -->
+      <image class="app-image" src="{{item.image}}" mode="aspectFill"></image>
+
+      <!-- 应用详细信息 -->
+      <view class="app-info">
+        <text class="app-title">{{item.name}}</text>
+        <view class="app-details">
+          <text>使用时间: {{item.time}} h</text>
+          <view class="progress-bar">
+            <view class="progress" style="width: {{item.progress}}%;"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+</view>

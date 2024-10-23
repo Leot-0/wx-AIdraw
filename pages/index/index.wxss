@@ -1,0 +1,47 @@
+/* index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 让内容垂直居中 */
+}
+
+.block {
+  width: 80%;
+  height: 100px;
+  margin: 20px 0;
+  background-color: #4CAF50; /* 正常状态的背景颜色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.1s, background-color 0.1s; /* 添加过渡动画 */
+}
+
+/* 点击按钮时的效果 */
+.block:active {
+  background-color: #388E3C; /* 点击时背景颜色变暗 */
+  transform: scale(0.95); /* 点击时缩放效果 */
+}
+
+/* 为每个按钮设置不同的背景颜色 */
+.block:nth-child(2) {
+  background-color: #2196F3; /* 应用按钮颜色 */
+}
+
+.block:nth-child(2):active {
+  background-color: #1976D2; /* 点击时的颜色变化 */
+}
+
+.block:nth-child(3) {
+  background-color: #FF9800; /* 搜索按钮颜色 */
+}
+
+.block:nth-child(3):active {
+  background-color: #F57C00; /* 点击时的颜色变化 */
+}

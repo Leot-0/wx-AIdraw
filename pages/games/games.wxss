@@ -1,0 +1,84 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  color: #333;
+}
+
+.picker {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.input {
+  width: 90%; /* 调整宽度以提供一些边距，让输入框不至于触碰到容器的边界 */
+  border: 1px solid #ccc; /* 保留，但可以调整颜色以更好地匹配设计 */
+  margin: 20px 5%; /* 水平居中显示，并保持顶部和底部的间距 */
+  padding: 12px 15px; /* 增加内填充以使文本输入时更舒适 */
+  border-radius: 8px; /* 添加圆角边框 */
+  background-color: #f9f9f9; /* 轻微的背景颜色，看起来更柔和 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 添加轻微的阴影，提升层次感 */
+  font-size: 16px; /* 增大字体大小，提升可读性 */
+  color: #333; /* 字体颜色深一些，增加对比 */
+  transition: border-color 0.3s, box-shadow 0.3s; /* 过渡动画使得焦点变化更平滑 */
+}
+
+.input:focus {
+  border-color: #0066cc; /* 输入框聚焦时边框颜色更明显 */
+  box-shadow: 0 2px 8px rgba(0,102,204,0.2); /* 聚焦时的阴影更明显 */
+}
+
+.button.send {
+  background-color: #1cbbb4;
+  color: white;
+  width: 30%;
+  padding: 1px;
+  border-radius: 25px;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-button {
+  position: relative;
+  width: 40%;
+  padding: 1px;
+  background-color: #1cbbb4;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.swiper-style {
+  height: 350px;
+  width: 100%;
+  position: relative;
+}
+
+.style-name {
+  position: absolute;
+  top: 10px;   /* 顶部留一点空间 */
+  right: 10px; /* 右边留一点空间 */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 12px; /* 小字体大小 */
+  z-index: 100; /* 确保文字在图片之上 */
+}

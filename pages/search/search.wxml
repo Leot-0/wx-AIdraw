@@ -1,0 +1,26 @@
+<!-- search.wxml -->
+<view class="container">
+
+  <!-- 城市选择下拉框 -->
+  <picker mode="selector" range="{{citiesLabels}}" bindchange="onCitySelect">
+    <view class="picker">
+      选择城市：{{selectedCity}}
+    </view>
+  </picker>
+
+  <!-- 城市输入框 -->
+  <input class="city-input" placeholder="请输入城市名" bindinput="onInput" />
+
+  <!-- 查询按钮 -->
+  <button bindtap="getWeather">查询天气</button>
+
+  <!-- 天气信息显示区域 -->
+  <view class="weather-info" wx:if="{{weather}}">
+    <text>城市：{{weather.name}}</text>
+    <text>温度：{{weather.main.temp}} °C</text>
+    <text>天气情况：{{weather.weather[0].description}}</text>
+    <text>湿度：{{weather.main.humidity}} %</text>
+    <text>风速：{{weather.wind.speed}} m/s</text>
+  </view>
+
+</view>

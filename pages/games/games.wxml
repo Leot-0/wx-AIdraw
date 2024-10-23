@@ -1,0 +1,34 @@
+<view class="container">
+  <!-- 风格轮播图 -->
+  <scroll-view class="scrollarea" scroll-y="false">
+    <swiper class="swiper-style" autoplay="{{false}}" indicator-dots="true" indicator-color="rgba(0, 0, 0, 0.5)" indicator-active-color="#f3514f">
+      <swiper-item>
+        <image src="/images/animexlXuebimix_v40.jpg" mode="aspectFit"/>
+        <view class="style-name" style="top: 0; right: 0;">动漫</view>
+        <button class="confirm-button" bindtap="confirmStyle" data-style="风格一">使用预览😘</button>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/GhostXL.png" mode="aspectFit" />
+        <view class="style-name" style="top: 0; right: 0;">幽灵</view>
+        <button class="confirm-button" bindtap="confirmStyle" data-style="风格二">使用预览😘</button>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/LEOSAM AIArt 兔狲插画 SDXL大模型.png" mode="aspectFit" />
+        <view class="style-name" style="top: 0; right: 0;">插画</view>
+        <button class="confirm-button" bindtap="confirmStyle" data-style="风格三">使用预览😘</button>
+      </swiper-item>
+    </swiper>
+  </scroll-view>
+
+  <!-- 提示词操作 -->
+  <textarea class="input" value="{{prompt}}" placeholder="请输入提示词" bindinput="onInput"></textarea>
+  <button class="button send" bindtap="generateImage">发送</button>
+
+  <!-- 模态框 -->
+  <modal hidden="{{!showModal}}" title="生成的图片" bindclose="onCloseModal">
+    <image src="{{imageUrl}}" mode="aspectFit" bindtap="previewImage"></image> <!-- 保持图片原始比例 -->
+    <button bindtap="saveImage">保存图片到本地</button> <!-- 新增保存按钮 -->
+    <button bindtap="onCloseModal">关闭</button>
+  </modal>
+
+</view>

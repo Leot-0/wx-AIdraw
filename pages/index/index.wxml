@@ -1,0 +1,15 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="block" bindtap="navigateToGames">
+    <text>游戏</text>
+  </view>
+
+  <view class="block" bindtap="navigateToApps">
+    <text>应用</text>
+  </view>
+
+  <view class="block" bindtap="navigateToSearch">
+    <text>搜索</text>
+  </view>
+  
+</view>

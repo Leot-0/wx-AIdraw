@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/games/games",
+    "pages/apps/apps",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小酒馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/games/games",
+        "text": "游戏",
+        "iconPath": "/icons/games.png",
+        "selectedIconPath": "/icons/games-active.png"
+      },
+      {
+        "pagePath": "pages/apps/apps",
+        "text": "应用",
+        "iconPath": "/icons/apps.png",
+        "selectedIconPath": "/icons/apps-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/icons/search.png",
+        "selectedIconPath": "/icons/search-active.png"
+      }
+    ],
+    "color": "#999999",
+    "selectedColor": "#999999",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black"
+  }
+}
